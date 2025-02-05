@@ -3,11 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const output = document.getElementById("output");
 
   // Initially, display the Loading... row
-  output.innerHTML = `
-    <tr id="loading-row">
-      <td colspan="2" class="text-center">Loading...</td>
-    </tr>
-  `;
+output.innerHTML = `
+  <tr id="loading">
+    <td colspan="2" class="text-center">Loading...</td>
+  </tr>
+`;
+
 
   function createPromise(index) {
     const time = (Math.random() * 2 + 1).toFixed(3); // Random time between 1 and 3 seconds
